@@ -25,8 +25,7 @@ class Patient
   end
   
   def doctors()
-    @appointments.select do |app|
-      app.doctor
+    @appointments.collect { |app| app.doctor}
     end
   end
   
