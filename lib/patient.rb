@@ -26,7 +26,6 @@ class Patient
   
   def doctors()
     @appointments.collect { |app| app.doctor}
-    end
   end
   
 end
